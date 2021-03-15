@@ -61,19 +61,19 @@
 
             </th>
         </thead>
-        {% for author in author_list %}
+        {% for book in book_list %}
         <tr>
             <td>
-                {{author.id}}
+                {{book.id}}
             </td>
             <td>
-                <a href="/books/authordetails/{{author.id}}">{{author.name}}</a>
+                <a href="/books/bookdetails/{{book.id}}">{{book.name}}</a>
             </td>
             <td>
-                {{author.created}}
+                {{book.created}}
             </td>
             <td>
-                <a class=" btn btn-success" href="/books/authordetails/{{author.id}}">Detaya git</a>
+                <a class=" btn btn-success" href="/books/bookdetails/{{book.id}}">Detaya git</a>
             </td>
 
         </tr>

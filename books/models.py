@@ -13,6 +13,8 @@ class Author(models.Model):
 class Book(models.Model):
     def __str__(self):
         return self.name
+
+        
     name=models.CharField(max_length=50)
     created=models.DateTimeField('date created')
     author=models.ForeignKey(Author,on_delete = models.CASCADE)
